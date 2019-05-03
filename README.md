@@ -8,9 +8,13 @@
 4. Create Virtual Machine (2048Mo, VMDK, 15Gio)
 5. Install librairies and softwares
 
+## Training kit
+
 ### Libraries and softwares
 
+### Dataset
 
+### Notebook
 
 ## Students part
 
