@@ -13,7 +13,11 @@
     - Install ipyleaflet : pip install --user ipyleaflet + 
     - OTB : ./OTB-6.6.1-Linux64.run --target /home/otb/OTB
     - Jupyter :
-6. Add dataset
+6. Configure network settings (proxy & certificates) for CNES environment.
+   Instructions from : https://gitlab.cnes.fr/hpc/wikiHPC/wikis/connexion-proxy
+   and https://gitlab.cnes.fr/hpc/wikiHPC/wikis/Acc%C3%A8s-%C3%A0-un-site-https-hors-master-CNES
+7. Add dataset
+
 
 **Note:** Python3 workaround (https://gitlab.orfeo-toolbox.org/orfeotoolbox/otb/issues/1540)
 
