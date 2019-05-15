@@ -2,6 +2,7 @@
 Read/Write OGR functions
 """
 from osgeo import ogr
+import sys
 
 def openToRead(shapefile):
     driver = ogr.GetDriverByName("SQLite")
