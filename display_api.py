@@ -17,7 +17,7 @@ from rasterio.warp import transform
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
-from ipyleaflet import Map, Rectangle, ImageOverlay, FullScreenControl, DrawControl, LayersControl
+from ipyleaflet import Map, Rectangle, ImageOverlay, FullScreenControl, DrawControl, LayersControl, GeoJSON
 
 
 def normalize(array, quantile=2):
@@ -91,7 +91,7 @@ def write_quicklook(raster, filename, downfactor=4):
             dst.write(band, n+1)
 
 
-def rasters_on_map(rasters_list, out_dir, overlay_names_list):
+def rasters_on_map(rasters_list, out_dir, overlay_names_list, geojson_data=None):
     """
     displays a raster on a ipyleaflet map
     :param rasters_list: rasters to display (rasterio image)
@@ -121,6 +121,12 @@ def rasters_on_map(rasters_list, out_dir, overlay_names_list):
     m.add_control(LayersControl())
     m.add_control(FullScreenControl())
 
+    # - add geojson data
+    if geojson_data is not None:
+        geo_json = GeoJSON(data=geojson_data,
+                           style = {'color': 'green', 'opacity':1, 'weight':1.9, 'dashArray':'9', 'fillOpacity':0.1})
+        m.add_layer(geo_json)
+    
     # - add draw control
     dc = DrawControl()
     m.add_control(dc)
