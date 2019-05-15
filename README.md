@@ -9,7 +9,7 @@
 4. Create Virtual Machine (2048Mo, VMDK, 15Gio) and install VirtualBox Guest Additions
 5. Install librairies and softwares
     - Miniconda : ./Miniconda3-latest-Linux-x86_64.sh
-    - Create otb env : conda create -n otb python=3.5 numpy rasterio jupyter matplotlib
+    - Create otb env : conda create -n otb python=3.5 numpy rasterio jupyter matplotlib gdal
     - Install ipyleaflet : pip install --user ipyleaflet + 
     - OTB : ./OTB-6.6.1-Linux64.run --target /home/otb/OTB
     - Jupyter :
