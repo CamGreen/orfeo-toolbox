@@ -5,6 +5,7 @@ Some functions for Jupyter displaying
 """
 
 import os
+import datetime
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -110,7 +111,7 @@ def rasters_on_map(rasters_list, out_dir, overlay_names_list, geojson_data=None)
     # - plot quicklook
     for raster, overlay_name in zip(rasters_list, overlay_names_list):
         bounds = transform_bounds(raster.crs, epsg4326, *raster.bounds)
-        quicklook_url = os.path.join(out_dir, os.path.splitext(overlay_name.replace("/", "_"))[0] + "_PREVIEW.JPG")
+        quicklook_url = os.path.join(out_dir, "PREVIEW_{}.JPG".format(datetime.datetime.now()))
         write_quicklook(raster, quicklook_url)
         quicklook = ImageOverlay(
             url=quicklook_url,
