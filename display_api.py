@@ -34,7 +34,7 @@ def normalize(array, quantile=2):
     return normalized.astype(np.uint8)
 
 
-def imshow_RGBPIR(raster, colors):
+def imshow_RGBPIR(raster, colors=["Red", "Blue", "Green", "NIR"]):
     """
     show R,G,B, PIR image
     :param array: raster (rasterio image)
