@@ -73,12 +73,23 @@ def write_quicklook(raster, filename, downfactor=4):
     # update size in profile
     newwidth = int(raster.width/downfactor)
     newheight = int(raster.height/downfactor)
-    aff = raster.affine
-    newaffine = rasterio.Affine(aff.a/downfactor, aff.b, aff.c,
-                                aff.d, aff.e/downfactor, aff.f)
-    
-    profile.update(dtype=rasterio.uint8, count=3, compress='lzw', driver='JPEG',
-                   width=newwidth, height=newheight, transform=newaffine, affine=newaffine)
+
+    try:
+        aff = raster.affine
+        newaffine = rasterio.Affine(aff.a/downfactor, aff.b, aff.c,
+                                    aff.d, aff.e/downfactor, aff.f)
+
+        profile.update(dtype=rasterio.uint8, count=3, compress='lzw', driver='JPEG',
+                       width=newwidth, height=newheight, transform=newaffine, affine=newaffine)
+
+    # depend on rasterio version
+    except AttributeError:
+        aff = raster.transform
+        newaffine = rasterio.Affine(aff.a/downfactor, aff.b, aff.c,
+                                    aff.d, aff.e/downfactor, aff.f)
+
+        profile.update(dtype=rasterio.uint8, count=3, compress='lzw', driver='JPEG',
+                       width=newwidth, height=newheight, transform=newaffine)
 
     # write raster
     with rasterio.open(filename, 'w', **profile) as dst:
