@@ -1,7 +1,5 @@
 # OTB guided tour
 
-## Teachers part
-
 1. Install VirtualBox https://www.virtualbox.org/
 2. Download the Ubuntu Budgies iso https://ubuntubudgie.org/downloads
 3. Download the OTB standalone package https://www.orfeo-toolbox.org/download/
@@ -20,15 +18,3 @@
 
 
 **Note:** Python3 workaround (https://gitlab.orfeo-toolbox.org/orfeotoolbox/otb/issues/1540)
-
-## Training kit
-
-### Libraries and softwares
-
-### Dataset
-
-### Notebook
-
-## Students part
-
-1. Install VirtualBox https://www.virtualbox.org/
