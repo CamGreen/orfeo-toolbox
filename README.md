@@ -1,7 +1,5 @@
 # OTB guided tour
 
-## Teachers part
-
 1. Install VirtualBox https://www.virtualbox.org/
 2. Download the Ubuntu Budgies iso https://ubuntubudgie.org/downloads
 3. Download the OTB standalone package https://www.orfeo-toolbox.org/download/
@@ -12,7 +10,7 @@
     - Create otb env : conda create -n otb python=3.5 numpy rasterio jupyter matplotlib gdal
     - Install ipyleaflet : pip install --user ipyleaflet + 
     - OTB : ./OTB-6.6.1-Linux64.run --target /home/otb/OTB
-    - Jupyter :
+    - Jupyter
 6. Configure network settings (proxy & certificates) for CNES environment.
    Instructions from : https://gitlab.cnes.fr/hpc/wikiHPC/wikis/connexion-proxy
    and https://gitlab.cnes.fr/hpc/wikiHPC/wikis/Acc%C3%A8s-%C3%A0-un-site-https-hors-master-CNES
@@ -20,15 +18,3 @@
 
 
 **Note:** Python3 workaround (https://gitlab.orfeo-toolbox.org/orfeotoolbox/otb/issues/1540)
-
-## Training kit
-
-### Libraries and softwares
-
-### Dataset
-
-### Notebook
-
-## Students part
-
-1. Install VirtualBox https://www.virtualbox.org/
