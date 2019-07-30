@@ -8,7 +8,7 @@
 5. Install librairies and softwares
     - Miniconda : ./Miniconda3-latest-Linux-x86_64.sh
     - Create otb env : conda create -n otb python=3.5 numpy rasterio jupyter matplotlib gdal
-    - Install ipyleaflet : pip install --user ipyleaflet + 
+    - Install ipyleaflet and shapely : pip install --user ipyleaflet shapely
     - OTB : ./OTB-6.6.1-Linux64.run --target /home/otb/OTB
     - Jupyter
 6. Configure network settings (proxy & certificates) for CNES environment.
