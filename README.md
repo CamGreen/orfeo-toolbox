@@ -17,7 +17,7 @@ But the first option will let you more possibilities to use OTB in your own envi
 ## Install OTB & workshop content
 1) To install OTB, please refer to https://www.orfeo-toolbox.org/download/
 2) Please also check your Python configuration (https://www.orfeo-toolbox.org/CookBook/Installation.html#) 
-3) Download the datapackage ([data_otb-guided-tour.zip](https://echange.cnes.fr/modules/exchanger/FileInfoProxyPO.po?fileId=10000000006049634&dirId=10000000000000000))
+3) Download the datapackage ([data_otb-guided-tour.zip](https://www.swisstransfer.com/d/a441a0d4-f2a3-42e8-83a6-bc364e49f9cb))
 4) Clone or download this repository
 
 The datapackage shall be unzipped in the otb-guided-tour folder.
