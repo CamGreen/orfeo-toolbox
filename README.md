@@ -27,5 +27,5 @@ First you shall install Virtual Box, and then download our virtual machine :
 - < download link >
 
 ## Start the notebooks : 
-Once you've installed your environment, go to otb-guided-tour folder and launch :
+Once you've installed your environment, open a terminal and go to otb-guided-tour folder and launch :
 > jupyter notebook
