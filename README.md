@@ -17,14 +17,18 @@ But the first option will let you more possibilities to use OTB in your own envi
 ## Install OTB & workshop content
 1) To install OTB, please refer to https://www.orfeo-toolbox.org/download/
 2) Please also check your Python configuration (https://www.orfeo-toolbox.org/CookBook/Installation.html#) 
-3) Download the datapackage ([data_otb-guided-tour.zip](https://www.swisstransfer.com/d/a441a0d4-f2a3-42e8-83a6-bc364e49f9cb))
+3) Download the datapackage ([data_otb-guided-tour.zip](https://www.orfeo-toolbox.org/packages/WorkshopData/data_otb-guided-tour.zip))
 4) Clone or download this repository
 
 The datapackage shall be unzipped in the otb-guided-tour folder.
 
 ## Install a virtual machine
 First you shall install Virtual Box, and then download our virtual machine : 
-- < download link >
+- [Linux Budgie 18.04 Virtual Machine](https://www.orfeo-toolbox.org/packages/WorkshopData/VM/) : there are three files to download.
+
+Once you've installed this virtual machine, you can log in using user:otb, password:otb.
+The virtual machine contains all the workshop material.
+
 
 ## Start the notebooks : 
 Once you've installed your environment, open a terminal and go to otb-guided-tour folder and launch :
